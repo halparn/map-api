@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Share a Place</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <link rel="stylesheet" href="assets/styles/share-place.css" />
+    <script src="assets/scripts/share-place.bdb5c15b721dada4ec9e.js" defer></script>
+  </head>
+  <body>
+    <template id="modal-template">
+      <div class="backdrop"></div>
+      <div class="modal"></div>
+    </template>
+    <template id="loading-modal-content">
+      <div class="modal__content centered">
+        <div class="lds-dual-ring"></div>
+        <div>
+          <span
+            >Lütfen uygulamanın düzgün çalışması için Konum izini aktive
+            edin.</span
+          >
+        </div>
+      </div>
+    </template>
+
+    <header>
+      <h1>DATALARIMIZ!</h1>
+    </header>
+
+    <section id="selected-place">
+      <div id="map">
+        <p>
+          Henüz bir yer seçmediniz. Lütfen bir adres girin veya kendinizi bulun!
+        </p>
+      </div>
+    </section>
+
+    <section id="share-controls">
+      <input
+        id="share-link"
+        type="text"
+        readonly
+        value="Select a place to get a sharable link."
+      />
+      <button id="share-btn" disabled>Share Place</button>
+    </section>
+
+    <section id="place-data">
+      <form>
+        <label for="address">Adres</label>
+        <input id="address" type="text" />
+        <button type="submit">Arat</button>
+      </form>
+      <button id="locate-btn">Datayı Çek</button>
+    </section>
+  </body>
+</html>
