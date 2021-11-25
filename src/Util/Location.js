@@ -1,4 +1,4 @@
-const GOOGLE_API = "AIzaSyBJ_M_QAJVVgZUE7WWlB5JR9_0AaU7FKI4";
+const GOOGLE_API = "******************************";
 const errMsg = "Işlem başarısız tekrar deneyiniz.";
 
 export async function getAddressCords(coords) {
