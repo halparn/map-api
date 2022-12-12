@@ -1,4 +1,5 @@
 import { Map } from "./UI/Map";
+let test;
 
 class LoadedPlace {
   constructor(coordins, address) {
