@@ -17,7 +17,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
       - name: CodeThreat Scanner
-        uses: halparn/action-test-repo@latest
+        uses: halparn/action-test-repo@master
         env:
            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
