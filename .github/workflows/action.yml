@@ -9,6 +9,8 @@ on:
   push: 
         branches:
         - master
+        - dev
+
 jobs:
   codethreat_scanner:
     runs-on: ubuntu-latest
